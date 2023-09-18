@@ -73,6 +73,7 @@ struct dp_option ad_def_ldap_opts[] = {
     { "ldap_network_timeout", DP_OPT_NUMBER, { .number = 6 }, NULL_NUMBER },
     { "ldap_opt_timeout", DP_OPT_NUMBER, { .number = 8 }, NULL_NUMBER },
     { "ldap_tls_reqcert", DP_OPT_STRING, { "hard" }, NULL_STRING },
+    { "ldap_uri_template_relative", DP_OPT_NUMBER, { .number = -1 }, NULL_NUMBER }, /* Parent OU of computer object */
     { "ldap_user_search_base", DP_OPT_STRING, NULL_STRING, NULL_STRING },
     { "ldap_user_search_scope", DP_OPT_STRING, { "sub" }, NULL_STRING },
     { "ldap_user_search_filter", DP_OPT_STRING, NULL_STRING, NULL_STRING },
