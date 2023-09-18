@@ -132,6 +132,7 @@ struct dp_option ad_def_ldap_opts[] = {
     { "ldap_krb5_ticket_lifetime", DP_OPT_NUMBER, { .number = (24 * 60 * 60) }, NULL_NUMBER },
     { "ldap_access_filter", DP_OPT_STRING, NULL_STRING, NULL_STRING },
     { "ldap_netgroup_search_base", DP_OPT_STRING, NULL_STRING, NULL_STRING },
+    { "ldap_derive_virtual_netgroup", DP_OPT_BOOL, BOOL_FALSE, BOOL_FALSE },
     { "ldap_group_nesting_level", DP_OPT_NUMBER, { .number = 2 }, NULL_NUMBER },
     { "ldap_deref", DP_OPT_STRING, NULL_STRING, NULL_STRING },
     { "ldap_account_expire_policy", DP_OPT_STRING, { "ad" }, NULL_STRING },
